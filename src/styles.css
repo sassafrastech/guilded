@@ -1,0 +1,26 @@
+html {
+  height: 100%;
+
+  /* 1 em = 10 px by default. */
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
+  /* Re-enlarge fonts as fallback in case MUI doesn't load properly. */
+  font-size: 1.4rem;
+  font-family: Roboto, sans-serif;
+
+  /* Always show vertical scrollbar to prevent jumpy navigation. */
+  overflow-y: scroll;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
