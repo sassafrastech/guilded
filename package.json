@@ -1,0 +1,9 @@
+{
+  "name": "guilded",
+  "version": "1.0.0",
+  "description": "Web app for freelancer cooperation.",
+  "main": "index.js",
+  "repository": "https://github.com/sassafrastech/guilded",
+  "license": "MIT",
+  "private": true
+}
