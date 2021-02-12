@@ -4,7 +4,8 @@ import React from 'react';
 export default {
   plugins: ['jss-provider'],
 
-  siteRoot: 'https://guilded.usworker.coop',
+  siteRoot: 'https://adoring-ptolemy-192a27.netlify.app',
+  // TODO: Make it something official like 'https://guilded.usworker.coop'
 
   getRoutes: () => [
     {
