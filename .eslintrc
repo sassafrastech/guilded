@@ -1,5 +1,14 @@
 {
-  "extends": "cooperka",
+  "extends": "cooperka/react",
+
+  "parser": "babel-eslint",
+
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+
+  "ignorePatterns": ["lib", "build", "dist", "artifacts", "tmp", "out"],
 
   // Any rules here will override those from
   // https://github.com/cooperka/eslint-config-cooperka.
