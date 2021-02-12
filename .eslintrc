@@ -1,0 +1,7 @@
+{
+  "extends": "cooperka",
+
+  // Any rules here will override those from
+  // https://github.com/cooperka/eslint-config-cooperka.
+  "rules": {}
+}
