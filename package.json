@@ -9,7 +9,26 @@
   "scripts": {
     "format": "prettier --write '*.{js,md}' --write '{src}/**/*.{js,md}'",
     "lint": "eslint --ext .js .",
+    "test": "jest",
     "clean": "rm -rf build dist artifacts tmp"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/*.test.js"
+    ],
+    "transform": {
+      "\\.js$": "babel-jest",
+      "\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ],
+    "resetMocks": true
   },
   "prettier": {
     "singleQuote": true,
@@ -44,7 +63,10 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "4.0.0",
     "husky": "4.3.6",
+    "jest": "26.6.3",
+    "jest-watch-typeahead": "0.6.1",
     "prettier": "2.2.1",
-    "pretty-quick": "3.1.0"
+    "pretty-quick": "3.1.0",
+    "react-test-renderer": "17.0.1"
   }
 }
