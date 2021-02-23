@@ -1,9 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders 1`] = `
-<div
-  className="makeStyles-container-1"
->
-  Hello world
-</div>
-`;
+exports[`renders 1`] = `<Hero />`;
