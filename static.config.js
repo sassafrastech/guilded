@@ -27,4 +27,9 @@ export default {
     </Html>
   ),
   /* eslint-enable */
+
+  devServer: {
+    // Allow connecting via proxy URLs like `http://my-site.test`
+    disableHostCheck: true,
+  },
 };
