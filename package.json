@@ -22,6 +22,9 @@
     "roots": [
       "<rootDir>/src"
     ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/config/jest/setupJest.js"
+    ],
     "testMatch": [
       "<rootDir>/src/**/*.test.js"
     ],
