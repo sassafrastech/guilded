@@ -5,18 +5,19 @@ exports[`renders 1`] = `
   className="makeStyles-container-1"
 >
   <img
-    alt="Woman brainstorming on whiteboard"
-    src="hero.jpg"
-  />
-  <img
     alt="Guilded Logo"
+    className="makeStyles-logo-2"
     src="logo.svg"
   />
-  <div>
-    True empowerment for freelancers
-  </div>
-  <div>
-    Guilded is a freelancer worker cooperative that focuses on the agency, decision-making and economic power of the freelancer. We offer invoicing, tax preparation, health care and advocacy support so that you can focus on doing what you do best. Scroll down to learn more.
+  <div
+    className="makeStyles-textContainer-3"
+  >
+    <div>
+      True empowerment for freelancers
+    </div>
+    <div>
+      Guilded is a freelancer worker cooperative that focuses on the agency, decision-making and economic power of the freelancer. We offer invoicing, tax preparation, health care and advocacy support so that you can focus on doing what you do best. Scroll down to learn more.
+    </div>
   </div>
 </div>
 `;
