@@ -12,12 +12,16 @@ exports[`renders 1`] = `
   <div
     className="makeStyles-textContainer-3"
   >
-    <div>
+    <h3
+      className="MuiTypography-root makeStyles-title-4 MuiTypography-h3"
+    >
       True empowerment for freelancers
-    </div>
-    <div>
+    </h3>
+    <h6
+      className="MuiTypography-root makeStyles-subtitle-5 MuiTypography-h6"
+    >
       Guilded is a freelancer worker cooperative that focuses on the agency, decision-making and economic power of the freelancer. We offer invoicing, tax preparation, health care and advocacy support so that you can focus on doing what you do best. Scroll down to learn more.
-    </div>
+    </h6>
   </div>
 </div>
 `;
