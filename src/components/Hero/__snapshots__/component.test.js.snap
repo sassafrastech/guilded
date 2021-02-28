@@ -22,6 +22,56 @@ exports[`renders 1`] = `
     >
       Guilded is a freelancer worker cooperative that focuses on the agency, decision-making and economic power of the freelancer. We offer invoicing, tax preparation, health care and advocacy support so that you can focus on doing what you do best. Scroll down to learn more.
     </h6>
+    <div
+      className="makeStyles-buttonContainer-6"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-7"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          I hire freelancers
+        </span>
+      </button>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-7"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          I am a freelancer
+        </span>
+      </button>
+    </div>
   </div>
 </div>
 `;
