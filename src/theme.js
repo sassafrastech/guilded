@@ -10,6 +10,7 @@ export default {
       // https://material-ui.com/components/typography/#accessibility
       variantMapping: {
         h3: 'h1',
+        h5: 'h2',
         h6: 'h2',
       },
     },

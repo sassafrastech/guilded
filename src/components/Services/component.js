@@ -14,6 +14,15 @@ const useStyles = makeStyles({
     right: 0,
     textAlign: 'center',
   },
+  title: {},
+  cardContainer: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
+    gridGap: 24,
+  },
+  card: {
+    backgroundColor: '#FFF9EF',
+  },
 });
 
 const Services = () => {
@@ -21,6 +30,14 @@ const Services = () => {
 
   return (
     <div className={classes.container}>
+      <Typography className={classes.title} variant="h5">
+        Services offered
+      </Typography>
+      <div className={classes.cardContainer}>
+        <div className={classes.card}>1</div>
+        <div className={classes.card}>2</div>
+        <div className={classes.card}>3</div>
+      </div>
       <Typography className={classes.legalText}>
         Copyright &copy; 2021
       </Typography>
