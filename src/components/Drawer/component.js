@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   makeStyles,
   Drawer,
@@ -37,30 +38,21 @@ const DRAWER_ITEMS = [
   ['Visit USFWC', 'https://www.usworker.coop'],
 ];
 
-const GuildedDrawer = () => {
+const GuildedDrawer = ({ isOpen, handleOpen, handleClose }) => {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
-
-  // const handleDrawerOpen = () => {
-  //   setOpen(true);
-  // };
-
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
 
   return (
     <Drawer
       className={classes.drawer}
       variant="persistent"
       anchor="left"
-      open={open}
+      open={isOpen}
       classes={{
         paper: classes.drawerPaper,
       }}
     >
       <div className={classes.drawerHeader}>
-        <IconButton onClick={handleDrawerClose}>
+        <IconButton onClick={handleClose}>
           <ChevronLeft />
         </IconButton>
       </div>
@@ -76,6 +68,12 @@ const GuildedDrawer = () => {
       </List>
     </Drawer>
   );
+};
+
+GuildedDrawer.propTypes = {
+  isOpen: PropTypes.bool,
+  handleOpen: PropTypes.func,
+  handleClose: PropTypes.func,
 };
 
 export default GuildedDrawer;

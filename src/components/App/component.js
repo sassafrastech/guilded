@@ -1,4 +1,5 @@
 import React from 'react';
+import clsx from 'clsx';
 import {
   createMuiTheme,
   ThemeProvider,
@@ -11,29 +12,59 @@ import Hero from '../Hero/component';
 import Services from '../Services/component';
 
 import '@fontsource/roboto';
-import theme from '../../theme';
+import appTheme from '../../theme';
 
-const muiTheme = createMuiTheme(theme);
+const muiTheme = createMuiTheme(appTheme);
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   container: {
     display: 'flex',
     width: '100%',
   },
   mainContainer: {
     flex: 1,
+    transition: theme.transitions.create('margin', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+    marginLeft: -DRAWER_WIDTH,
   },
-});
+  drawerShift: {
+    transition: theme.transitions.create('margin', {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+    marginLeft: 0,
+  },
+}));
 
 const App = () => {
   const classes = useStyles();
+  const [isDrawerOpen, setDrawerOpen] = React.useState(true);
+
+  const handleDrawerOpen = () => {
+    setDrawerOpen(true);
+  };
+
+  const handleDrawerClose = () => {
+    setDrawerOpen(false);
+  };
 
   return (
     <ThemeProvider theme={muiTheme}>
       <CssBaseline />
       <div className={classes.container}>
-        <Drawer />
-        <main className={classes.mainContainer}>
+        <Drawer
+          isOpen={isDrawerOpen}
+          handleOpen={handleDrawerOpen}
+          handleClose={handleDrawerClose}
+        />
+        <main
+          className={clsx(
+            classes.mainContainer,
+            isDrawerOpen && classes.drawerShift,
+          )}
+        >
           <Hero />
           <Services />
         </main>

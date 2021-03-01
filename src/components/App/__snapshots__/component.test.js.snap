@@ -4,9 +4,13 @@ exports[`renders 1`] = `
 <div
   className="makeStyles-container-1"
 >
-  <Drawer />
+  <Drawer
+    handleClose={[Function]}
+    handleOpen={[Function]}
+    isOpen={true}
+  />
   <main
-    className="makeStyles-mainContainer-2"
+    className="makeStyles-mainContainer-2 makeStyles-drawerShift-3"
   >
     <Hero />
     <Services />
