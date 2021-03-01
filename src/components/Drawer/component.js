@@ -8,23 +8,34 @@ import {
   IconButton,
   Divider,
 } from '@material-ui/core';
-import { ChevronLeft } from '@material-ui/icons';
+import ChevronLeft from '@material-ui/icons/ChevronLeft';
 
-const drawerWidth = 240;
+export const DRAWER_WIDTH = 240;
 
 const useStyles = makeStyles({
   drawer: {
-    width: drawerWidth,
+    width: DRAWER_WIDTH,
   },
   drawerPaper: {
-    width: drawerWidth,
+    width: DRAWER_WIDTH,
   },
   drawerHeader: {
     display: 'flex',
     padding: 4,
     justifyContent: 'flex-end',
   },
+  listItemLink: {
+    color: 'inherit',
+    textDecoration: 'none',
+  },
 });
+
+const DRAWER_ITEMS = [
+  // TODO: This is definitely the wrong email address...
+  ['Contact Us', 'mailto:members@gmail.com'],
+  ['Take Our Survey', 'https://guildedcoop.typeform.com/to/vrrfHhlE'],
+  ['Visit USFWC', 'https://www.usworker.coop'],
+];
 
 const GuildedDrawer = () => {
   const classes = useStyles();
@@ -38,9 +49,6 @@ const GuildedDrawer = () => {
     setOpen(false);
   };
 
-  // Contact Us mailto:members@gmail.com subject WebInquiry:
-  // Take Our Survey https://guildedcoop.typeform.com/to/vrrfHhlE
-  // Visit USFWC https://www.usworker.coop
   return (
     <Drawer
       className={classes.drawer}
@@ -58,10 +66,12 @@ const GuildedDrawer = () => {
       </div>
       <Divider />
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
+        {DRAWER_ITEMS.map(([title, href]) => (
+          <a key={title} className={classes.listItemLink} href={href}>
+            <ListItem button>
+              <ListItemText primary={title} />
+            </ListItem>
+          </a>
         ))}
       </List>
     </Drawer>

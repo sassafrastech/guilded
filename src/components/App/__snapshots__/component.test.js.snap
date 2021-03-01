@@ -1,11 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders 1`] = `
-Array [
-  <Drawer />,
-  <main>
+<div
+  className="makeStyles-container-1"
+>
+  <Drawer />
+  <main
+    className="makeStyles-mainContainer-2"
+  >
     <Hero />
     <Services />
-  </main>,
-]
+  </main>
+</div>
 `;
