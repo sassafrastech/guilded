@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import clsx from 'clsx';
 import {
   makeStyles,
   Drawer,
@@ -10,26 +11,39 @@ import {
   Divider,
 } from '@material-ui/core';
 import ChevronLeft from '@material-ui/icons/ChevronLeft';
+import ChevronRight from '@material-ui/icons/ChevronRight';
 
 export const DRAWER_WIDTH = 240;
 
-const useStyles = makeStyles({
-  drawer: {
+const useStyles = makeStyles((theme) => ({
+  drawerOpen: {
     width: DRAWER_WIDTH,
+    transition: theme.transitions.create('width', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
   },
-  drawerPaper: {
-    width: DRAWER_WIDTH,
+  drawerClosed: {
+    width: 56 + 1,
+    transition: theme.transitions.create('width', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
   },
   drawerHeader: {
     display: 'flex',
     padding: 4,
     justifyContent: 'flex-end',
   },
+  drawerHeaderOpen: {
+    justifyContent: 'flex-end',
+  },
+  drawerHeaderClosed: {},
   listItemLink: {
     color: 'inherit',
     textDecoration: 'none',
   },
-});
+}));
 
 const DRAWER_ITEMS = [
   // TODO: This is definitely the wrong email address...
@@ -40,25 +54,33 @@ const DRAWER_ITEMS = [
 
 const GuildedDrawer = ({ isOpen, handleOpen, handleClose }) => {
   const classes = useStyles();
+  const drawerClasses = clsx(
+    isOpen ? classes.drawerOpen : classes.drawerClosed,
+  );
 
   return (
     <Drawer
-      className={classes.drawer}
       variant="persistent"
       anchor="left"
-      open={isOpen}
+      open
+      className={drawerClasses}
       classes={{
-        paper: classes.drawerPaper,
+        paper: drawerClasses,
       }}
     >
-      <div className={classes.drawerHeader}>
-        <IconButton onClick={handleClose}>
-          <ChevronLeft />
+      <div
+        className={clsx(
+          classes.drawerHeader,
+          isOpen ? classes.drawerHeaderOpen : classes.drawerHeaderClosed,
+        )}
+      >
+        <IconButton onClick={isOpen ? handleClose : handleOpen}>
+          {isOpen ? <ChevronLeft /> : <ChevronRight />}
         </IconButton>
       </div>
       <Divider />
       <List>
-        {DRAWER_ITEMS.map(([title, href]) => (
+        {(isOpen ? DRAWER_ITEMS : []).map(([title, href]) => (
           <a key={title} className={classes.listItemLink} href={href}>
             <ListItem button>
               <ListItemText primary={title} />

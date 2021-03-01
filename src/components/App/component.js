@@ -1,5 +1,4 @@
 import React from 'react';
-import clsx from 'clsx';
 import {
   createMuiTheme,
   ThemeProvider,
@@ -7,7 +6,7 @@ import {
   makeStyles,
 } from '@material-ui/core';
 
-import Drawer, { DRAWER_WIDTH } from '../Drawer/component';
+import Drawer from '../Drawer/component';
 import Hero from '../Hero/component';
 import Services from '../Services/component';
 
@@ -16,7 +15,7 @@ import appTheme from '../../theme';
 
 const muiTheme = createMuiTheme(appTheme);
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   container: {
     display: 'flex',
     width: '100%',
@@ -24,21 +23,7 @@ const useStyles = makeStyles((theme) => ({
   mainContainer: {
     flex: 1,
   },
-  drawerShiftable: {
-    transition: theme.transitions.create('margin', {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-    marginLeft: -DRAWER_WIDTH,
-  },
-  drawerShifted: {
-    transition: theme.transitions.create('margin', {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-    marginLeft: 0,
-  },
-}));
+});
 
 const App = () => {
   const classes = useStyles();
@@ -61,13 +46,7 @@ const App = () => {
           handleOpen={handleDrawerOpen}
           handleClose={handleDrawerClose}
         />
-        <main
-          className={clsx(
-            classes.mainContainer,
-            classes.drawerShiftable,
-            isDrawerOpen && classes.drawerShifted,
-          )}
-        >
+        <main className={classes.mainContainer}>
           <Hero />
           <Services />
         </main>
