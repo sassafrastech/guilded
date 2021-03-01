@@ -23,13 +23,15 @@ const useStyles = makeStyles((theme) => ({
   },
   mainContainer: {
     flex: 1,
+  },
+  drawerShiftable: {
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
     marginLeft: -DRAWER_WIDTH,
   },
-  drawerShift: {
+  drawerShifted: {
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
@@ -62,7 +64,8 @@ const App = () => {
         <main
           className={clsx(
             classes.mainContainer,
-            isDrawerOpen && classes.drawerShift,
+            classes.drawerShiftable,
+            isDrawerOpen && classes.drawerShifted,
           )}
         >
           <Hero />

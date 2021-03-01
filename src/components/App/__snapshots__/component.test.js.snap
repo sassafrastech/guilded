@@ -10,7 +10,7 @@ exports[`renders 1`] = `
     isOpen={true}
   />
   <main
-    className="makeStyles-mainContainer-2 makeStyles-drawerShift-3"
+    className="makeStyles-mainContainer-2 makeStyles-drawerShiftable-3 makeStyles-drawerShifted-4"
   >
     <Hero />
     <Services />
