@@ -1,6 +1,7 @@
 import React from 'react';
 import { createMuiTheme, ThemeProvider, CssBaseline } from '@material-ui/core';
 
+import Drawer from '../Drawer/component';
 import Hero from '../Hero/component';
 import Services from '../Services/component';
 
@@ -13,8 +14,11 @@ const App = () => {
   return (
     <ThemeProvider theme={muiTheme}>
       <CssBaseline />
-      <Hero />
-      <Services />
+      <Drawer />
+      <main>
+        <Hero />
+        <Services />
+      </main>
     </ThemeProvider>
   );
 };
