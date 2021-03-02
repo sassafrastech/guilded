@@ -6,8 +6,9 @@ import hero from '../../assets/hero.jpg';
 
 const useStyles = makeStyles({
   container: {
-    height: '100vh',
+    height: '95vh',
     minHeight: 300,
+    maxHeight: 900,
     background: `url(${hero})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',

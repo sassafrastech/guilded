@@ -13,7 +13,7 @@ import {
 import ChevronLeft from '@material-ui/icons/ChevronLeft';
 import ChevronRight from '@material-ui/icons/ChevronRight';
 
-export const DRAWER_WIDTH = 240;
+export const DRAWER_WIDTH = 200;
 
 const useStyles = makeStyles((theme) => ({
   drawerOpen: {
