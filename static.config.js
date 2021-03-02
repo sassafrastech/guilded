@@ -4,7 +4,7 @@ import React from 'react';
 export default {
   plugins: ['jss-provider'],
 
-  siteRoot: 'https://guilded-demo.netlify.app/',
+  siteRoot: 'https://guilded.netlify.app/',
 
   getRoutes: () => [
     {
