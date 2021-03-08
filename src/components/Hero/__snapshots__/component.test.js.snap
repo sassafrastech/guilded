@@ -45,12 +45,13 @@ exports[`renders 1`] = `
         <span
           className="MuiButton-label"
         >
-          I hire freelancers
+          Support Guilded
         </span>
       </button>
-      <button
+      <a
+        aria-disabled={false}
         className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-7"
-        disabled={false}
+        href="https://guildedcoop.typeform.com/to/jFmHAFvv"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -63,14 +64,13 @@ exports[`renders 1`] = `
         onTouchMove={[Function]}
         onTouchStart={[Function]}
         tabIndex={0}
-        type="button"
       >
         <span
           className="MuiButton-label"
         >
-          I am a freelancer
+          Join Guilded
         </span>
-      </button>
+      </a>
     </div>
   </div>
 </div>

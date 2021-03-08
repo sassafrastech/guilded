@@ -58,10 +58,14 @@ const Hero = () => {
         </Typography>
         <div className={classes.buttonContainer}>
           <Button className={classes.button} variant="contained">
-            I hire freelancers
+            Support Guilded
           </Button>
-          <Button className={classes.button} variant="contained">
-            I am a freelancer
+          <Button
+            className={classes.button}
+            variant="contained"
+            href="https://guildedcoop.typeform.com/to/jFmHAFvv"
+          >
+            Join Guilded
           </Button>
         </div>
       </div>
