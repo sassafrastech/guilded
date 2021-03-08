@@ -25,6 +25,7 @@ const useStyles = makeStyles({
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
     gridGap: 24,
+    paddingBottom: 80,
   },
 });
 
