@@ -10,7 +10,6 @@ import Drawer from '../Drawer/component';
 import Hero from '../Hero/component';
 import Services from '../Services/component';
 
-import '@fontsource/roboto';
 import appTheme from '../../theme';
 
 const muiTheme = createMuiTheme(appTheme);

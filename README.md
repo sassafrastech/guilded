@@ -43,3 +43,8 @@ Eventually, the plan is:
 
 - Web config at [static.config.js](static.config.js)
 - Main components at [src/components](src/components)
+
+## Credits
+
+- Fonts: [Bebas Kai](http://bebaskai.com/),
+  [Kiona](https://creativemarket.com/EllenLuff/2095752-KIONA-A-Modern-Sans-Serif)

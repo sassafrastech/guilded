@@ -1009,11 +1009,6 @@
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
-"@fontsource/roboto@4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.2.1.tgz#fc75a2c6f5267230f37c40c00bec5bf05d61c5c0"
-  integrity sha512-C236dlY57hG+Gg4C9SS2i5qNBILg31uzSdVhO6wUk27rgOz+rtztcUA17VI+HWdAd4LQaTp/vF6NDi303KRtqg==
-
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
