@@ -12,21 +12,15 @@ exports[`renders 1`] = `
   <div
     className="makeStyles-cardContainer-4"
   >
-    <div
-      className="makeStyles-card-5"
-    >
-      1
-    </div>
-    <div
-      className="makeStyles-card-5"
-    >
-      2
-    </div>
-    <div
-      className="makeStyles-card-5"
-    >
-      3
-    </div>
+    <ServiceCard
+      title="Invoicing, Payment & Tax Prep"
+    />
+    <ServiceCard
+      title="Network & Connect"
+    />
+    <ServiceCard
+      title="Health Care Access"
+    />
   </div>
   <p
     className="MuiTypography-root makeStyles-legalText-2 MuiTypography-body1"

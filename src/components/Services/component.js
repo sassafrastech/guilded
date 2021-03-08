@@ -1,6 +1,8 @@
 import React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 
+import ServiceCard from './ServiceCard/component';
+
 const useStyles = makeStyles({
   container: {
     minHeight: 300,
@@ -20,9 +22,6 @@ const useStyles = makeStyles({
     gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
     gridGap: 24,
   },
-  card: {
-    backgroundColor: '#FFF9EF',
-  },
 });
 
 const Services = () => {
@@ -34,9 +33,9 @@ const Services = () => {
         Services offered
       </Typography>
       <div className={classes.cardContainer}>
-        <div className={classes.card}>1</div>
-        <div className={classes.card}>2</div>
-        <div className={classes.card}>3</div>
+        <ServiceCard title="Invoicing, Payment & Tax Prep" />
+        <ServiceCard title="Network & Connect" />
+        <ServiceCard title="Health Care Access" />
       </div>
       <Typography className={classes.legalText}>
         Copyright &copy; 2021
