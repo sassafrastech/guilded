@@ -3,6 +3,10 @@ import { makeStyles, Typography } from '@material-ui/core';
 
 import ServiceCard from './ServiceCard/component';
 
+import bill from '../../assets/bill.svg';
+import tax from '../../assets/tax.svg';
+import stethoscope from '../../assets/stethoscope.svg';
+
 const useStyles = makeStyles({
   container: {
     minHeight: 300,
@@ -33,9 +37,21 @@ const Services = () => {
         Services offered
       </Typography>
       <div className={classes.cardContainer}>
-        <ServiceCard title="Invoicing, Payment & Tax Prep" />
-        <ServiceCard title="Network & Connect" />
-        <ServiceCard title="Health Care Access" />
+        <ServiceCard
+          icon={bill}
+          title="Invoicing, Collections & Tax Preparation"
+          description="Invoice and collect payments from your clients through Guilded and stop losing sleep around client non-payment. Guilded also provides annual and state tax preparation for members."
+        />
+        <ServiceCard
+          icon={tax}
+          title="Network & Connect"
+          description="Connect with other freelancers within your city and state for larger contracts, professional development and mutual support. Join the movement and connect with other labor and social justice groups fighting for workers rights."
+        />
+        <ServiceCard
+          icon={stethoscope}
+          title="Health Care Access"
+          description="Access to our network of Direct Primary Care clinics for all your primary care needs."
+        />
       </div>
       <Typography className={classes.legalText}>
         Copyright &copy; 2021

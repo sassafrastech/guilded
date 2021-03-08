@@ -12,6 +12,7 @@ export default {
         h3: 'h1',
         h5: 'h2',
         h6: 'h2',
+        h7: 'h3',
       },
     },
   },

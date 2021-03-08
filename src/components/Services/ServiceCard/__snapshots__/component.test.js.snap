@@ -4,6 +4,20 @@ exports[`renders 1`] = `
 <div
   className="makeStyles-container-1"
 >
-  Test
+  <img
+    alt=""
+    className="makeStyles-icon-2"
+    src="Icon"
+  />
+  <h6
+    className="MuiTypography-root MuiTypography-subtitle1"
+  >
+    Title
+  </h6>
+  <p
+    className="MuiTypography-root MuiTypography-body2"
+  >
+    Description
+  </p>
 </div>
 `;

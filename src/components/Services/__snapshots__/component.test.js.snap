@@ -13,12 +13,18 @@ exports[`renders 1`] = `
     className="makeStyles-cardContainer-4"
   >
     <ServiceCard
-      title="Invoicing, Payment & Tax Prep"
+      description="Invoice and collect payments from your clients through Guilded and stop losing sleep around client non-payment. Guilded also provides annual and state tax preparation for members."
+      icon="bill.svg"
+      title="Invoicing, Collections & Tax Preparation"
     />
     <ServiceCard
+      description="Connect with other freelancers within your city and state for larger contracts, professional development and mutual support. Join the movement and connect with other labor and social justice groups fighting for workers rights."
+      icon="tax.svg"
       title="Network & Connect"
     />
     <ServiceCard
+      description="Access to our network of Direct Primary Care clinics for all your primary care needs."
+      icon="stethoscope.svg"
       title="Health Care Access"
     />
   </div>
