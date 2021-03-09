@@ -1,17 +1,19 @@
 import React from 'react';
 import { makeStyles, Typography, Button } from '@material-ui/core';
 
+import { sitePadding } from '../../styles';
+
 import logo from '../../assets/logo.svg';
 import hero from '../../assets/hero.jpg';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   container: {
     minHeight: '95vh',
     background: `url(${hero})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     position: 'relative',
-    padding: '0 100px',
+    ...sitePadding(theme),
   },
   logo: {
     position: 'absolute',
@@ -38,7 +40,7 @@ const useStyles = makeStyles({
   button: {
     marginRight: 20,
   },
-});
+}));
 
 const Hero = () => {
   const classes = useStyles();

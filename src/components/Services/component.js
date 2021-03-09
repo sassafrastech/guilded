@@ -3,16 +3,18 @@ import { makeStyles, Typography } from '@material-ui/core';
 
 import ServiceCard from './ServiceCard/component';
 
+import { sitePadding } from '../../styles';
+
 import bill from '../../assets/bill.svg';
 import tax from '../../assets/tax.svg';
 import stethoscope from '../../assets/stethoscope.svg';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   container: {
     minHeight: 300,
     background: '#EBE0C9',
     position: 'relative',
-    padding: '0 100px',
+    ...sitePadding(theme),
   },
   legalText: {
     position: 'absolute',
@@ -30,7 +32,7 @@ const useStyles = makeStyles({
     gridGap: 24,
     paddingBottom: 80,
   },
-});
+}));
 
 const Services = () => {
   const classes = useStyles();
