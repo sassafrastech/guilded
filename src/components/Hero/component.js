@@ -70,6 +70,7 @@ const Hero = () => {
         <div className={classes.buttonContainer}>
           <Button
             className={classes.button}
+            size="large"
             variant="contained"
             color="primary"
           >
@@ -77,6 +78,7 @@ const Hero = () => {
           </Button>
           <Button
             className={classes.button}
+            size="large"
             variant="contained"
             color="primary"
             href="https://guildedcoop.typeform.com/to/jFmHAFvv"
