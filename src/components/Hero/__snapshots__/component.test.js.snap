@@ -12,21 +12,24 @@ exports[`renders 1`] = `
   <div
     className="makeStyles-textContainer-3"
   >
+    <div
+      className="makeStyles-dash-4"
+    />
     <h3
-      className="MuiTypography-root makeStyles-title-4 MuiTypography-h3"
+      className="MuiTypography-root makeStyles-title-5 MuiTypography-h3"
     >
       True empowerment for freelancers
     </h3>
     <h6
-      className="MuiTypography-root makeStyles-subtitle-5 MuiTypography-h6"
+      className="MuiTypography-root makeStyles-subtitle-6 MuiTypography-h6"
     >
       Guilded is a freelancer worker cooperative that focuses on the agency, decision-making and economic power of the freelancer. We offer invoicing, tax preparation, health care and advocacy support so that you can focus on doing what you do best. Scroll down to learn more.
     </h6>
     <div
-      className="makeStyles-buttonContainer-6"
+      className="makeStyles-buttonContainer-7"
     >
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-7 MuiButton-containedPrimary"
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-8 MuiButton-containedPrimary"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -50,7 +53,7 @@ exports[`renders 1`] = `
       </button>
       <a
         aria-disabled={false}
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-7 MuiButton-containedPrimary"
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-8 MuiButton-containedPrimary"
         href="https://guildedcoop.typeform.com/to/jFmHAFvv"
         onBlur={[Function]}
         onDragLeave={[Function]}

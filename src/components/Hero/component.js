@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, withStyles, Typography, Button } from '@material-ui/core';
+import { makeStyles, Typography, Button } from '@material-ui/core';
 
 import { COLOR, sitePadding } from '../../styles';
 
@@ -27,6 +27,11 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 160,
     maxWidth: 600,
   },
+  dash: {
+    width: 76,
+    height: 13,
+    background: COLOR.primary,
+  },
   title: {
     color: COLOR.primary,
   },
@@ -49,6 +54,7 @@ const Hero = () => {
     <div className={classes.container}>
       <img className={classes.logo} src={logo} alt="Guilded Logo" />
       <div className={classes.textContainer}>
+        <div className={classes.dash} />
         <Typography className={classes.title} variant="h3">
           True empowerment for freelancers
         </Typography>
