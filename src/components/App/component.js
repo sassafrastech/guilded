@@ -36,6 +36,13 @@ const App = () => {
     setDrawerOpen(false);
   };
 
+  React.useEffect(() => {
+    // Close the drawer by default on screens narrower than 'md'.
+    if (window.innerWidth && window.innerWidth < 960) {
+      handleDrawerClose();
+    }
+  }, []);
+
   return (
     <ThemeProvider theme={muiTheme}>
       <CssBaseline />
