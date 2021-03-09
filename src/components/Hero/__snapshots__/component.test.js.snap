@@ -26,7 +26,7 @@ exports[`renders 1`] = `
       className="makeStyles-buttonContainer-6"
     >
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-7"
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-7 MuiButton-containedPrimary"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -50,7 +50,7 @@ exports[`renders 1`] = `
       </button>
       <a
         aria-disabled={false}
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-7"
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-7 MuiButton-containedPrimary"
         href="https://guildedcoop.typeform.com/to/jFmHAFvv"
         onBlur={[Function]}
         onDragLeave={[Function]}

@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles, Typography } from '@material-ui/core';
 
+import { COLOR } from '../../../styles';
+
 const useStyles = makeStyles({
   container: {
-    backgroundColor: '#FFF9EF',
+    backgroundColor: COLOR.primary,
     padding: 20,
     borderRadius: 20,
   },

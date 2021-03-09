@@ -1,7 +1,7 @@
 import React from 'react';
-import { makeStyles, Typography, Button } from '@material-ui/core';
+import { makeStyles, withStyles, Typography, Button } from '@material-ui/core';
 
-import { sitePadding } from '../../styles';
+import { COLOR, sitePadding } from '../../styles';
 
 import logo from '../../assets/logo.svg';
 import hero from '../../assets/hero.jpg';
@@ -28,10 +28,10 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 600,
   },
   title: {
-    color: '#FFF9EF',
+    color: COLOR.primary,
   },
   subtitle: {
-    color: '#FFF9EF',
+    color: COLOR.primary,
   },
   buttonContainer: {
     marginTop: 20,
@@ -59,12 +59,17 @@ const Hero = () => {
           you can focus on doing what you do best. Scroll down to learn more.
         </Typography>
         <div className={classes.buttonContainer}>
-          <Button className={classes.button} variant="contained">
+          <Button
+            className={classes.button}
+            variant="contained"
+            color="primary"
+          >
             Support Guilded
           </Button>
           <Button
             className={classes.button}
             variant="contained"
+            color="primary"
             href="https://guildedcoop.typeform.com/to/jFmHAFvv"
           >
             Join Guilded

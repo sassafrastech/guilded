@@ -1,3 +1,5 @@
+import { COLOR } from './styles';
+
 import BebasKai from './assets/BebasKai.woff2';
 import Kiona from './assets/Kiona-Regular.woff2';
 
@@ -29,6 +31,9 @@ const kiona = {
 };
 
 export default {
+  palette: {
+    primary: { main: COLOR.primary },
+  },
   // https://material-ui-next.com/customization/themes/#typography
   typography: {
     // Account for base font-size of 62.5%.
