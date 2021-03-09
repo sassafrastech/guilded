@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContainer: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
     gridGap: 24,
     paddingBottom: 120,
   },
@@ -59,7 +59,7 @@ const Services = () => {
           description="Access to our network of Direct Primary Care clinics for all your primary care needs."
         />
       </div>
-      <Typography className={classes.legalText}>
+      <Typography className={classes.legalText} variant="body2">
         Copyright &copy; 2021
       </Typography>
     </div>

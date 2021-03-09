@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   textContainer: {
     paddingTop: 160,
-    maxWidth: 600,
+    maxWidth: 560,
   },
   dash: {
     width: 76,
@@ -37,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitle: {
     color: COLOR.primary,
+    fontWeight: 600,
+    lineHeight: 1.3,
+    padding: '16px 0',
   },
   buttonContainer: {
     marginTop: 20,
