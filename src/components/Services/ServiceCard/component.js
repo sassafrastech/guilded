@@ -12,6 +12,11 @@ const useStyles = makeStyles({
     maxWidth: 48,
     height: 48,
   },
+  title: {
+    fontWeight: 600,
+    marginTop: 16,
+    marginBottom: 12,
+  },
 });
 
 const Services = ({ icon, title, description }) => {
