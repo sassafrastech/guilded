@@ -54,6 +54,9 @@ exports[`renders 1`] = `
     <ul
       className="MuiList-root MuiList-padding"
     />
+    <div
+      className="makeStyles-spacer-7"
+    />
   </div>
 </div>
 `;

@@ -13,6 +13,8 @@ import {
 import ChevronLeft from '@material-ui/icons/ChevronLeft';
 import ChevronRight from '@material-ui/icons/ChevronRight';
 
+import DrawerFooter from './DrawerFooter/component';
+
 export const DRAWER_WIDTH = 200;
 
 const useStyles = makeStyles((theme) => ({
@@ -42,6 +44,9 @@ const useStyles = makeStyles((theme) => ({
   listItemLink: {
     color: 'inherit',
     textDecoration: 'none',
+  },
+  spacer: {
+    flex: 1,
   },
 }));
 
@@ -88,6 +93,8 @@ const GuildedDrawer = ({ isOpen, handleOpen, handleClose }) => {
           </a>
         ))}
       </List>
+      <div className={classes.spacer} />
+      {isOpen ? <DrawerFooter /> : null}
     </Drawer>
   );
 };
