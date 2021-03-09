@@ -15,7 +15,7 @@ import ChevronRight from '@material-ui/icons/ChevronRight';
 
 import DrawerFooter from './DrawerFooter/component';
 
-export const DRAWER_WIDTH = 200;
+export const DRAWER_WIDTH = 180;
 
 const useStyles = makeStyles((theme) => ({
   drawerOpen: {

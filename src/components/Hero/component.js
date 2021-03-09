@@ -6,13 +6,12 @@ import hero from '../../assets/hero.jpg';
 
 const useStyles = makeStyles({
   container: {
-    height: '95vh',
-    minHeight: 300,
-    maxHeight: 900,
+    minHeight: '95vh',
     background: `url(${hero})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     position: 'relative',
+    padding: '0 100px',
   },
   logo: {
     position: 'absolute',
@@ -34,6 +33,7 @@ const useStyles = makeStyles({
   },
   buttonContainer: {
     marginTop: 20,
+    paddingBottom: 32,
   },
   button: {
     marginRight: 20,

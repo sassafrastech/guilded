@@ -5,6 +5,8 @@ import { makeStyles, Typography } from '@material-ui/core';
 const useStyles = makeStyles({
   container: {
     backgroundColor: '#FFF9EF',
+    padding: 20,
+    borderRadius: 20,
   },
   icon: {
     maxWidth: 48,

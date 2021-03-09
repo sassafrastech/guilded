@@ -12,6 +12,7 @@ const useStyles = makeStyles({
     minHeight: 300,
     background: '#EBE0C9',
     position: 'relative',
+    padding: '0 100px',
   },
   legalText: {
     position: 'absolute',
@@ -20,7 +21,9 @@ const useStyles = makeStyles({
     right: 0,
     textAlign: 'center',
   },
-  title: {},
+  title: {
+    padding: '32px 0',
+  },
   cardContainer: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
