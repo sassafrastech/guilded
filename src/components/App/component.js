@@ -11,6 +11,7 @@ import Hero from '../Hero/component';
 import Services from '../Services/component';
 
 import appTheme from '../../theme';
+import Scroller from '../Scroller/component';
 
 const muiTheme = createMuiTheme(appTheme);
 
@@ -56,6 +57,7 @@ const App = () => {
           <Hero />
           <Services />
         </main>
+        <Scroller />
       </div>
     </ThemeProvider>
   );
