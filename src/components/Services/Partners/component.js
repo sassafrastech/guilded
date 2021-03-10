@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles, List, ListItem, ListItemText } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 
 import usfwc from '../../../assets/logo-usfwc.png';
 import smart from '../../../assets/logo-smart.svg';
 import cci from '../../../assets/logo-cci.svg';
 
 const useStyles = makeStyles({
+  container: {
+    display: 'flex',
+  },
   logo: {
     height: 56,
   },
@@ -17,9 +20,7 @@ const LogoLink = ({ href, src, alt }) => {
 
   return (
     <a href={href}>
-      <ListItem button>
-        <img className={classes.logo} src={src} alt={alt} />
-      </ListItem>
+      <img className={classes.logo} src={src} alt={alt} />
     </a>
   );
 };
@@ -30,12 +31,12 @@ LogoLink.propTypes = {
   alt: PropTypes.string,
 };
 
-const GuildedDrawer = () => {
+const Partners = () => {
+  const classes = useStyles();
+
   return (
-    <List>
-      <ListItem>
-        <ListItemText primary="Our Partners" />
-      </ListItem>
+    <div className={classes.container}>
+      <Typography>Our Partners</Typography>
       <LogoLink
         src={usfwc}
         alt="USFWC Logo"
@@ -43,12 +44,10 @@ const GuildedDrawer = () => {
       />
       <LogoLink src={smart} alt="Smart Logo" href="https://www.smart.coop/" />
 
-      <ListItem>
-        <ListItemText primary="Funding From" />
-      </ListItem>
+      <Typography>Funding From</Typography>
       <LogoLink src={cci} alt="CCI Arts Logo" href="https://www.cciarts.org/" />
-    </List>
+    </div>
   );
 };
 
-export default GuildedDrawer;
+export default Partners;
