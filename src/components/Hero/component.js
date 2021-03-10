@@ -32,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
   textContainer: {
     paddingTop: 160,
     maxWidth: 560,
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: 440,
+    },
   },
   dash: {
     width: 76,
@@ -41,6 +44,9 @@ const useStyles = makeStyles((theme) => ({
   title: {
     color: COLOR.primary,
     textShadow: '0 1px 1px rgba(0, 0, 0, 0.5)',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '4rem',
+    },
   },
   subtitle: {
     color: COLOR.primary,
@@ -48,6 +54,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     lineHeight: 1.3,
     padding: '16px 0',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1.6rem',
+    },
   },
   buttonContainer: {
     marginTop: 20,
