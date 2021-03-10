@@ -47,3 +47,5 @@ Eventually, the plan is:
 
 - Fonts: [Bebas Kai](http://bebaskai.com/),
   [Kiona](https://creativemarket.com/EllenLuff/2095752-KIONA-A-Modern-Sans-Serif)
+- Images: Main photo by
+  [Joel Muniz](https://unsplash.com/@jmuniz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

@@ -9,7 +9,7 @@ import hero from '../../assets/hero.jpg';
 const useStyles = makeStyles((theme) => ({
   container: {
     minHeight: '95vh',
-    background: `url(${hero})`,
+    background: `linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(${hero})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     position: 'relative',
@@ -34,9 +34,11 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: COLOR.primary,
+    textShadow: '0 1px 1px rgba(0, 0, 0, 0.5)',
   },
   subtitle: {
     color: COLOR.primary,
+    textShadow: '0 1px 1px rgba(0, 0, 0, 0.5)',
     fontWeight: 600,
     lineHeight: 1.3,
     padding: '16px 0',
