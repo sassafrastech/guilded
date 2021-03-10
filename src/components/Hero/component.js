@@ -86,6 +86,7 @@ const Hero = () => {
             size="large"
             variant="contained"
             color="primary"
+            href="https://guildedcoop.typeform.com/to/vAo4vj"
           >
             Support Guilded
           </Button>

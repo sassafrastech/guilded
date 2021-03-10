@@ -28,9 +28,10 @@ exports[`renders 1`] = `
     <div
       className="makeStyles-buttonContainer-7"
     >
-      <button
+      <a
+        aria-disabled={false}
         className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-8 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
-        disabled={false}
+        href="https://guildedcoop.typeform.com/to/vAo4vj"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -43,14 +44,13 @@ exports[`renders 1`] = `
         onTouchMove={[Function]}
         onTouchStart={[Function]}
         tabIndex={0}
-        type="button"
       >
         <span
           className="MuiButton-label"
         >
           Support Guilded
         </span>
-      </button>
+      </a>
       <a
         aria-disabled={false}
         className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-8 MuiButton-containedSecondary MuiButton-containedSizeLarge MuiButton-sizeLarge"
