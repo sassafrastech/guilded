@@ -4,11 +4,11 @@ exports[`renders 1`] = `
 <div
   className="makeStyles-container-1"
 >
-  <h5
-    className="MuiTypography-root makeStyles-title-3 MuiTypography-h5"
+  <h4
+    className="MuiTypography-root makeStyles-title-3 MuiTypography-h4"
   >
     Services offered
-  </h5>
+  </h4>
   <div
     className="makeStyles-cardContainer-4"
   >

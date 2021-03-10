@@ -39,7 +39,7 @@ const Services = () => {
 
   return (
     <div className={classes.container}>
-      <Typography className={classes.title} variant="h5">
+      <Typography className={classes.title} variant="h4">
         Services offered
       </Typography>
       <div className={classes.cardContainer}>
