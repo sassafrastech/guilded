@@ -46,8 +46,20 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 32,
   },
   button: {
-    marginRight: 20,
+    marginRight: 36,
     marginBottom: 16,
+    position: 'relative',
+
+    '&:before': {
+      border: `0.5px solid ${COLOR.primary}`,
+      borderRadius: 4,
+      content: '""',
+      position: 'absolute',
+      top: -4,
+      left: -4,
+      width: 'calc(100% + 8px)',
+      height: 'calc(100% + 8px)',
+    },
   },
 }));
 
