@@ -9,9 +9,14 @@ import cci from '../../../assets/logo-cci.svg';
 const useStyles = makeStyles({
   container: {
     display: 'flex',
+    justifyContent: 'center',
+  },
+  text: {
+    alignSelf: 'center',
   },
   logo: {
     height: 56,
+    margin: 12,
   },
 });
 
@@ -36,7 +41,9 @@ const Partners = () => {
 
   return (
     <div className={classes.container}>
-      <Typography>Our Partners</Typography>
+      <Typography className={classes.text} variant="body1">
+        Our Partners:
+      </Typography>
       <LogoLink
         src={usfwc}
         alt="USFWC Logo"
@@ -44,7 +51,9 @@ const Partners = () => {
       />
       <LogoLink src={smart} alt="Smart Logo" href="https://www.smart.coop/" />
 
-      <Typography>Funding From</Typography>
+      <Typography className={classes.text} variant="body1">
+        Funding From:
+      </Typography>
       <LogoLink src={cci} alt="CCI Arts Logo" href="https://www.cciarts.org/" />
     </div>
   );

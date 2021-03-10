@@ -5,16 +5,16 @@ exports[`renders 1`] = `
   className="makeStyles-container-1"
 >
   <p
-    className="MuiTypography-root MuiTypography-body1"
+    className="MuiTypography-root makeStyles-text-2 MuiTypography-body1"
   >
-    Our Partners
+    Our Partners:
   </p>
   <a
     href="https://www.usworker.coop/"
   >
     <img
       alt="USFWC Logo"
-      className="makeStyles-logo-2"
+      className="makeStyles-logo-3"
       src="logo-usfwc.png"
     />
   </a>
@@ -23,21 +23,21 @@ exports[`renders 1`] = `
   >
     <img
       alt="Smart Logo"
-      className="makeStyles-logo-2"
+      className="makeStyles-logo-3"
       src="logo-smart.svg"
     />
   </a>
   <p
-    className="MuiTypography-root MuiTypography-body1"
+    className="MuiTypography-root makeStyles-text-2 MuiTypography-body1"
   >
-    Funding From
+    Funding From:
   </p>
   <a
     href="https://www.cciarts.org/"
   >
     <img
       alt="CCI Arts Logo"
-      className="makeStyles-logo-2"
+      className="makeStyles-logo-3"
       src="logo-cci.svg"
     />
   </a>
