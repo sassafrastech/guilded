@@ -51,8 +51,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const DRAWER_ITEMS = [
-  // TODO: This is definitely the wrong email address...
-  ['Contact Us', 'mailto:members@gmail.com'],
+  ['Contact Us', 'mailto:members@guilded.coop?subject=WebInquiry:'],
   ['Take Our Survey', 'https://guildedcoop.typeform.com/to/vrrfHhlE'],
   ['Visit USFWC', 'https://www.usworker.coop'],
 ];
