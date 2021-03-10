@@ -83,11 +83,15 @@ const GuildedDrawer = ({ isOpen, handleOpen, handleClose }) => {
       <Divider />
       <List>
         {(isOpen ? DRAWER_ITEMS : []).map(([title, href]) => (
-          <a key={title} className={classes.listItemLink} href={href}>
-            <ListItem button>
-              <ListItemText primary={title} />
-            </ListItem>
-          </a>
+          <ListItem
+            button
+            component="a"
+            key={title}
+            className={classes.listItemLink}
+            href={href}
+          >
+            <ListItemText primary={title} />
+          </ListItem>
         ))}
       </List>
     </Drawer>
