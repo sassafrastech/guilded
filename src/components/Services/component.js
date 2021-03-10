@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContainer: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
     gridGap: 24,
     paddingBottom: 120,
   },

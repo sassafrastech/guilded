@@ -9,6 +9,7 @@ const useStyles = makeStyles({
     backgroundColor: COLOR.primary,
     padding: 20,
     borderRadius: 20,
+    minHeight: 240,
   },
   icon: {
     maxWidth: 48,
