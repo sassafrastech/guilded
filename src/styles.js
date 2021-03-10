@@ -1,5 +1,6 @@
 export const COLOR = {
   primary: '#FFF9EF',
+  secondary: '#C33368',
 };
 
 export const sitePadding = (theme) => ({

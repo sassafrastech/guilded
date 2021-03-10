@@ -81,7 +81,7 @@ const Hero = () => {
             className={classes.button}
             size="large"
             variant="contained"
-            color="primary"
+            color="secondary"
             href="https://guildedcoop.typeform.com/to/jFmHAFvv"
           >
             Join Guilded

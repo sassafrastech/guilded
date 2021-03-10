@@ -33,6 +33,7 @@ const kiona = {
 export default {
   palette: {
     primary: { main: COLOR.primary },
+    secondary: { main: COLOR.secondary },
   },
   // https://material-ui-next.com/customization/themes/#typography
   typography: {
