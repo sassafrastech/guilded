@@ -37,7 +37,6 @@ Currently designed as a static landing page.
 Eventually, the plan is:
 
 - [Express](http://expressjs.com/) server
-- [Apollo server](https://www.apollographql.com/server) for GraphQL API
 
 ## Architecture
 
