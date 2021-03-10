@@ -28,51 +28,6 @@ exports[`renders 1`] = `
       title="Health Care Access"
     />
   </div>
-  <div
-    className="makeStyles-container-5"
-  >
-    <p
-      className="MuiTypography-root MuiTypography-body1"
-    >
-      Our Partners
-    </p>
-    <a
-      href="https://www.usworker.coop/"
-    >
-      <img
-        alt="USFWC Logo"
-        className="makeStyles-logo-6"
-        src="logo-usfwc.png"
-      />
-    </a>
-    <a
-      href="https://www.smart.coop/"
-    >
-      <img
-        alt="Smart Logo"
-        className="makeStyles-logo-6"
-        src="logo-smart.svg"
-      />
-    </a>
-    <p
-      className="MuiTypography-root MuiTypography-body1"
-    >
-      Funding From
-    </p>
-    <a
-      href="https://www.cciarts.org/"
-    >
-      <img
-        alt="CCI Arts Logo"
-        className="makeStyles-logo-6"
-        src="logo-cci.svg"
-      />
-    </a>
-  </div>
-  <p
-    className="MuiTypography-root makeStyles-legalText-2 MuiTypography-body2"
-  >
-    Copyright © 2021
-  </p>
+  <Footer />
 </div>
 `;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<div
+  className="makeStyles-container-1"
+>
+  <Partners />
+  <p
+    className="MuiTypography-root makeStyles-legalText-2 MuiTypography-body2"
+  >
+    Copyright © 2021
+  </p>
+</div>
+`;

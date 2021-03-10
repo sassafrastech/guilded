@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 
 import ServiceCard from './ServiceCard/component';
-import Partners from './Partners/component';
+import Footer from '../Footer/component';
 
 import { sitePadding } from '../../styles';
 
@@ -60,10 +60,8 @@ const Services = () => {
           description="Access to our network of Direct Primary Care clinics for all your primary care needs."
         />
       </div>
-      <Partners />
-      <Typography className={classes.legalText} variant="body2">
-        Copyright &copy; 2021
-      </Typography>
+
+      <Footer />
     </div>
   );
 };
