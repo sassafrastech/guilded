@@ -10,6 +10,7 @@ const useStyles = makeStyles({
   container: {
     display: 'flex',
     justifyContent: 'center',
+    flexWrap: 'wrap',
   },
   text: {
     alignSelf: 'center',

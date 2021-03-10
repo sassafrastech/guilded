@@ -6,7 +6,7 @@ import Partners from './Partners/component';
 const useStyles = makeStyles({
   container: {
     position: 'absolute',
-    bottom: 10,
+    bottom: 20,
     left: 0,
     right: 0,
   },
