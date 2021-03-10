@@ -9,7 +9,13 @@ import hero from '../../assets/hero.jpg';
 const useStyles = makeStyles((theme) => ({
   container: {
     minHeight: '95vh',
-    background: `linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(${hero})`,
+    background: [
+      // Highlight the top of the image to show off the guilded logo.
+      'linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent, transparent)',
+      // Shadow the left of the image for text readability.
+      'linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent)',
+      `url(${hero})`,
+    ].join(', '),
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     position: 'relative',
