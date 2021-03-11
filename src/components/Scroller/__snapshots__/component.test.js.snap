@@ -3,5 +3,48 @@
 exports[`renders 1`] = `
 <div
   className="makeStyles-container-1"
-/>
+>
+  <button
+    className="MuiButtonBase-root makeStyles-dotButton-2"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <div
+      className="makeStyles-dot-3 makeStyles-topDot-4"
+    />
+  </button>
+  <button
+    className="MuiButtonBase-root makeStyles-dotButton-2"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <div
+      className="makeStyles-dot-3 makeStyles-bottomDot-5"
+    />
+  </button>
+</div>
 `;
