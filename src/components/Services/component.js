@@ -35,11 +35,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Services = () => {
+const Services = React.forwardRef((_, ref) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.container}>
+    <div ref={ref} className={classes.container}>
       <Typography className={classes.title} variant="h4">
         Services offered
       </Typography>
@@ -64,6 +64,6 @@ const Services = () => {
       <Footer />
     </div>
   );
-};
+});
 
 export default Services;

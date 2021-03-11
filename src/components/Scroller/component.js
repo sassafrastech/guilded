@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles, ButtonBase } from '@material-ui/core';
 
@@ -31,19 +32,31 @@ const useStyles = makeStyles({
   },
 });
 
-const Scroller = () => {
+const Scroller = ({ scrollTo }) => {
   const classes = useStyles();
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const scrollToComponent = () => {
+    scrollTo.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div className={classes.container}>
-      <ButtonBase className={classes.dotButton}>
+      <ButtonBase className={classes.dotButton} onClick={scrollToTop}>
         <div className={clsx(classes.dot, classes.topDot)} />
       </ButtonBase>
-      <ButtonBase className={classes.dotButton}>
+      <ButtonBase className={classes.dotButton} onClick={scrollToComponent}>
         <div className={clsx(classes.dot, classes.bottomDot)} />
       </ButtonBase>
     </div>
   );
+};
+
+Scroller.propTypes = {
+  scrollTo: PropTypes.element,
 };
 
 export default Scroller;

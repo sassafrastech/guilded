@@ -44,6 +44,8 @@ const App = () => {
     }
   }, []);
 
+  const servicesRef = React.createRef();
+
   return (
     <ThemeProvider theme={muiTheme}>
       <CssBaseline />
@@ -55,9 +57,9 @@ const App = () => {
         />
         <main className={classes.mainContainer}>
           <Hero />
-          <Services />
+          <Services ref={servicesRef} />
         </main>
-        <Scroller />
+        <Scroller scrollTo={servicesRef} />
       </div>
     </ThemeProvider>
   );
