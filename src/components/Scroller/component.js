@@ -45,10 +45,18 @@ const Scroller = ({ scrollTo }) => {
 
   return (
     <div className={classes.container}>
-      <ButtonBase className={classes.dotButton} onClick={scrollToTop}>
+      <ButtonBase
+        className={classes.dotButton}
+        onClick={scrollToTop}
+        tabIndex={-1}
+      >
         <div className={clsx(classes.dot, classes.topDot)} />
       </ButtonBase>
-      <ButtonBase className={classes.dotButton} onClick={scrollToComponent}>
+      <ButtonBase
+        className={classes.dotButton}
+        onClick={scrollToComponent}
+        tabIndex={-1}
+      >
         <div className={clsx(classes.dot, classes.bottomDot)} />
       </ButtonBase>
     </div>
@@ -56,7 +64,7 @@ const Scroller = ({ scrollTo }) => {
 };
 
 Scroller.propTypes = {
-  scrollTo: PropTypes.element,
+  scrollTo: PropTypes.object,
 };
 
 export default Scroller;
