@@ -4,21 +4,31 @@ import { makeStyles, Typography, Button } from '@material-ui/core';
 import { COLOR, sitePadding } from '../../styles';
 
 import logo from '../../assets/logo.svg';
-import hero from '../../assets/hero.jpg';
+import heroSmall from '../../assets/hero-small.jpg';
+import heroLarge from '../../assets/hero-large.jpg';
+
+const heroScrim = [
+  // Highlight the top of the image to show off the guilded logo.
+  'linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent, transparent)',
+  // Shadow the left of the image for text readability.
+  'linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent)',
+];
+
+const backgroundAttribs = {
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+};
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    minHeight: '95vh',
-    background: [
-      // Highlight the top of the image to show off the guilded logo.
-      'linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent, transparent)',
-      // Shadow the left of the image for text readability.
-      'linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent)',
-      `url(${hero})`,
-    ].join(', '),
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
     position: 'relative',
+    minHeight: '95vh',
+    background: [...heroScrim, `url(${heroSmall})`].join(', '),
+    ...backgroundAttribs,
+    [theme.breakpoints.up('md')]: {
+      background: [...heroScrim, `url(${heroLarge})`].join(', '),
+      ...backgroundAttribs,
+    },
     ...sitePadding(theme),
   },
   logo: {
