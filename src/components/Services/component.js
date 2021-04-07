@@ -12,7 +12,7 @@ import stethoscope from '../../assets/stethoscope.svg';
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    minHeight: 300,
+    minHeight: '95vh', // Match hero.
     background: '#EBE0C9',
     position: 'relative',
     ...sitePadding(theme),
