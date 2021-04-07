@@ -13,9 +13,14 @@ import {
 import ChevronLeft from '@material-ui/icons/ChevronLeft';
 import ChevronRight from '@material-ui/icons/ChevronRight';
 
+import { COLOR } from '../../styles';
+
 export const DRAWER_WIDTH = 180;
 
 const useStyles = makeStyles((theme) => ({
+  drawer: {
+    background: COLOR.primary,
+  },
   drawerOpen: {
     width: DRAWER_WIDTH,
     transition: theme.transitions.create('width', {
@@ -57,6 +62,7 @@ const DRAWER_ITEMS = [
 const GuildedDrawer = ({ isOpen, handleOpen, handleClose }) => {
   const classes = useStyles();
   const drawerClasses = clsx(
+    classes.drawer,
     isOpen ? classes.drawerOpen : classes.drawerClosed,
   );
 

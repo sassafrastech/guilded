@@ -2,10 +2,10 @@
 
 exports[`renders 1`] = `
 <div
-  className="MuiDrawer-root MuiDrawer-docked makeStyles-drawerClosed-2"
+  className="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1 makeStyles-drawerClosed-3"
 >
   <div
-    className="MuiPaper-root MuiDrawer-paper makeStyles-drawerClosed-2 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
+    className="MuiPaper-root MuiDrawer-paper makeStyles-drawer-1 makeStyles-drawerClosed-3 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
     style={
       Object {
         "visibility": undefined,
@@ -13,7 +13,7 @@ exports[`renders 1`] = `
     }
   >
     <div
-      className="makeStyles-drawerHeader-3 makeStyles-drawerHeaderClosed-5"
+      className="makeStyles-drawerHeader-4 makeStyles-drawerHeaderClosed-6"
     >
       <button
         className="MuiButtonBase-root MuiIconButton-root"
