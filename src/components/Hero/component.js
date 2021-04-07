@@ -76,6 +76,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 36,
     marginBottom: 16,
     position: 'relative',
+    fontSize: '2rem',
 
     '&:before': {
       border: `0.5px solid ${COLOR.primary}`,
