@@ -12,6 +12,7 @@ const useStyles = makeStyles({
   },
   legalText: {
     textAlign: 'center',
+    letterSpacing: 0.4,
   },
 });
 
@@ -23,7 +24,9 @@ const Services = () => {
       <Partners />
 
       <Typography className={classes.legalText} variant="body2">
-        Copyright &copy; 2021
+        Copyright &copy; 2021. Designed by{' '}
+        <a href="https://www.colab.coop/">CoLab</a>, built by{' '}
+        <a href="https://www.sassafras.coop/">Sassafras</a>.
       </Typography>
     </div>
   );

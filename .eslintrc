@@ -12,5 +12,8 @@
 
   // Any rules here will override those from
   // https://github.com/cooperka/eslint-config-cooperka.
-  "rules": {}
+  "rules": {
+    // Handled by Prettier.
+    "react/jsx-one-expression-per-line": "off"
+  }
 }

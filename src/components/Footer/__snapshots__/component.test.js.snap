@@ -8,7 +8,21 @@ exports[`renders 1`] = `
   <p
     className="MuiTypography-root makeStyles-legalText-2 MuiTypography-body2"
   >
-    Copyright © 2021
+    Copyright © 2021. Designed by
+     
+    <a
+      href="https://www.colab.coop/"
+    >
+      CoLab
+    </a>
+    , built by
+     
+    <a
+      href="https://www.sassafras.coop/"
+    >
+      Sassafras
+    </a>
+    .
   </p>
 </div>
 `;
