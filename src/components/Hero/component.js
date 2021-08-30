@@ -123,7 +123,7 @@ const Hero = () => {
             size="large"
             variant="contained"
             color="secondary"
-            href="https://guildedcoop.typeform.com/to/jFmHAFvv"
+            href="https://www.tinyurl.com/guildedlca"
           >
             Join Guilded
           </Button>
