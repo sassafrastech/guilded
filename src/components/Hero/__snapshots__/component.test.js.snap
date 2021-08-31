@@ -54,7 +54,7 @@ exports[`renders 1`] = `
       <a
         aria-disabled={false}
         className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-8 MuiButton-containedSecondary MuiButton-containedSizeLarge MuiButton-sizeLarge"
-        href="https://guildedcoop.typeform.com/to/jFmHAFvv"
+        href="https://www.tinyurl.com/guildedlca"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
