@@ -125,7 +125,7 @@ const Hero = () => {
             color="secondary"
             href="https://www.tinyurl.com/guildedlca"
           >
-            Join Guilded
+            I am Interested
           </Button>
         </div>
       </div>
