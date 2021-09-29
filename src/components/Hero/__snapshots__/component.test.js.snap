@@ -71,7 +71,7 @@ exports[`renders 1`] = `
         <span
           className="MuiButton-label"
         >
-          I'm Interested!
+          I am Interested
         </span>
       </a>
     </div>
