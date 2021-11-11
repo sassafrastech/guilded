@@ -123,7 +123,7 @@ const Hero = () => {
             size="large"
             variant="contained"
             color="secondary"
-            href="https://guildedcoop.typeform.com/to/cufma5pa#groupaffiliation=web"
+            href="https://guildedcoop.typeform.com/to/Xf16H7O5#groupaffiliation=web"
           >
             I am Interested
           </Button>
